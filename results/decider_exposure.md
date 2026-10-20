@@ -1,6 +1,8 @@
 # Decider Training Exposure
 
-Decider's public training recipe includes the Measuring Hate Speech (MHS) corpus. We replayed the recipe to determine which MHS test comments fall into its training selection.
+Decider's public training recipe includes the Measuring Hate Speech (MHS) corpus. We replayed the recipe to determine which MHS test comments fall into its training selection. The paper summarizes this analysis in its limitations (Section 5).
+
+**Summary.** Decider scores about 3 points higher on training-selected comments than on the others. On the 1,477 comments outside its training selection, it still scores above Jev and Sol (.780 versus .691 and .692 under benchmark-direct classification).
 
 ## Protocol
 
@@ -15,7 +17,7 @@ Decider's public training recipe includes the Measuring Hate Speech (MHS) corpus
 | Model | Condition | Seen | Neither | Δ (pp) [95% CI] |
 |---|---|---:|---:|---|
 | Decider | Benchmark | .809 | .780 | +2.9 [−0.2, +6.1] |
-| Decider | A | .817 | .784 | +3.3 [+0.2, +6.5] |
+| Decider | A | .817 | .784 | +3.3 [+0.1, +6.5] |
 | Decider | B | .728 | .687 | +4.1 [+0.2, +8.2] |
 | Jev | Benchmark | .686 | .691 | −0.5 [−4.2, +3.1] |
 | Jev | A | .687 | .689 | −0.3 [−4.0, +3.4] |

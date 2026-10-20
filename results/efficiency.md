@@ -1,12 +1,12 @@
 # Efficiency Measurements
 
-Complete-decision timing and recorded hosted cost on all 3,728 HateCheck texts, for direct (A) and decomposed (B) classification. A machine-readable version is in `efficiency.csv`.
+Complete-decision timing and recorded hosted cost on all 3,728 HateCheck texts, for matched direct (A) and decomposed (B) classification. A machine-readable version is in `efficiency.csv`.
 
 ## Protocol
 
 - The time to a complete decision includes per-text execution and, for decomposition, all component answers and the rule computation. Model loading and warm-up are excluded.
 - Texts are processed one at a time. Batch size and hosted concurrency are one.
-- Observed throughput uses the complete elapsed processing time rather than the reciprocal of median latency, so it does not represent peak throughput.
+- Observed throughput divides the number of texts by the sum of the per-text complete-decision timing intervals. Setup, warm-up, and scheduling overhead are excluded. It is serial, batch-one throughput, not peak throughput.
 - Hosted cost comes from recorded usage and charges. No monetary cost is assigned to local inference (shown as a dash, not zero cost).
 - BART's timing reflects its definition-conditioned template.
 - Hardware for local models is listed in `../settings/inference_settings.md`.
