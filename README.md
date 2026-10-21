@@ -1,6 +1,6 @@
 # Can Platforms Moderate by Prompt? Supplementary Repository
 
-This anonymized repository accompanies the submission *Can Platforms Moderate by Prompt? Evaluating Structured Decision Models for Policy-Conditioned Hate-Speech Moderation*. It contains the material that the paper's page limit excludes: complete prompts, model interfaces and settings, additional results, the human annotations of the audit, and the policy-contrast set.
+This anonymized repository accompanies the submission *Can Platforms Moderate by Prompt? Evaluating Structured Decision Models for Policy-Conditioned Hate-Speech Moderation*. It contains the material that the paper's page limit excludes: complete prompts, model interfaces and settings, additional results, the expert and LLM-judge annotations of the audit, and the policy-contrast set.
 
 All paths below are relative to the repository root. Section letters refer to the paper's appendix.
 
@@ -24,8 +24,8 @@ All paths below are relative to the repository root. Section letters refer to th
 | `results/efficiency.md`, `results/efficiency.csv` | Median and 95th-percentile latency, throughput, and cost for all models | Appendix H, Figure 3 |
 | `results/cascades.md` | Cascade protocol, results, estimated and live latency, and the cascade curves | Appendix I |
 | `results/audit_protocol.md` | Protocol and results of the policy and component audit | Section 4.2, Table 3, Appendix J |
-| `data/audit/audit_annotations.csv` | Human and GPT-6-Astra annotations of the 200 audited texts (identifiers only) | Appendix J |
-| `data/policy_contrast/` | Policy-contrast policies, 240 texts, expected labels, annotations, validation, and model results | Sections 3 and 4.2, Appendix K |
+| `data/audit/audit_annotations.csv` | Expert, Opus, Gemini and majority-reference annotations of 200 audited texts (identifiers only) | Appendix J |
+| `data/policy_contrast/` | Policy-contrast policies, 240 candidates, 234 accepted texts, expert–judge validation, original results and acceptance sensitivity | Sections 3 and 4.2, Appendix K |
 | `results/decider_exposure.md` | Decider training-exposure replay results | Section 5 |
 | `results/generic_definition.md` | Effect of the generic definition (early experiments) | Not in paper |
 | `results/selective_routing.md` | Exploratory selective-routing analysis (earlier cohorts) | Not in paper |
@@ -42,3 +42,9 @@ The study uses four public datasets under their terms of use: Dynamic (Dynamical
 - Texts in the datasets contain hateful and offensive language. This repository reproduces definitions, instructions, and prompts, but no dataset texts. Audit annotations refer to texts by their dataset identifiers.
 - **Content warning:** `data/policy_contrast/texts.csv` contains constructed hateful statements filled into HateCheck templates. They exist only to test whether models follow a change in policy.
 - Hosted model identifiers do not guarantee unchanged weights over time. Exact reproduction of hosted results may therefore not be possible.
+
+## Final annotation reference
+
+The audit and policy-contrast validation use one expert hate-speech researcher plus Opus (`anthropic/claude-opus-5.5`) and Gemini (`google/gemini-4-argon`). At least two agreeing definite votes establish each audit reference field; uncertain/missing do not vote. The audit resolves 187/200 policy judgments and all components for 180 texts, with 29 reference–dataset conflicts.
+
+Policy-contrast validation accepts 234/240 candidates under the frozen joint-policy and quality rule. `data/policy_contrast/VALIDATION.md` gives agreement, Fleiss kappa and excluded IDs; its README compares the original 240-text results with the 234-text sensitivity. Existing model result files remain unchanged and retain their original evaluation populations.
