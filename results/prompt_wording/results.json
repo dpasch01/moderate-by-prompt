@@ -1,0 +1,1855 @@
+{
+  "created_utc": "2026-10-22T08:02:36.914114+00:00",
+  "protocol_sha256": "d10a7db4ab8250db984dc2ecfe8211ac9972bd4050ebbbe74d3d493dfd17d6c9",
+  "cells": {
+    "laya": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6923252243812302,
+        "accuracy": 0.7461754605057759,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8788878416588124,
+            "recall": 0.7703428335398596,
+            "f1-score": 0.8210433634162447,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.4856614246068455,
+            "recall": 0.6713554987212276,
+            "f1-score": 0.5636070853462157,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1865,
+            556
+          ],
+          [
+            257,
+            525
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6882064592069448,
+            "accuracy": 0.7418045582266625,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8777251184834123,
+                "recall": 0.7649731515902519,
+                "f1-score": 0.8174795850805562,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.4794144556267155,
+                "recall": 0.670076726342711,
+                "f1-score": 0.5589333333333333,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1852,
+                569
+              ],
+              [
+                258,
+                524
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6923252243812302,
+            "comparison_macro_f1": 0.6882064592069448,
+            "difference_pp": -0.41187651742854436,
+            "adjusted_interval_pp": [
+              -1.4307104929658234,
+              0.5408927900323196
+            ],
+            "descriptive_ci95_pp": [
+              -1.0409900316462457,
+              0.24066422355577488
+            ],
+            "transitions": {
+              "changed": 86,
+              "corrected": 36,
+              "introduced": 50,
+              "both_correct": 2340,
+              "both_wrong": 777,
+              "corrected_fp": 23,
+              "corrected_fn": 13,
+              "introduced_fp": 36,
+              "introduced_fn": 14
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 86,
+          "paired_n": 3203,
+          "changed_percent": 2.6849828285981894
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6883746304241458,
+            "accuracy": 0.7424289728379644,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8771266540642723,
+                "recall": 0.7666253614209004,
+                "f1-score": 0.8181617809124972,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.48022079116835326,
+                "recall": 0.6675191815856778,
+                "f1-score": 0.5585874799357945,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1856,
+                565
+              ],
+              [
+                260,
+                522
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6923252243812302,
+            "comparison_macro_f1": 0.6883746304241458,
+            "difference_pp": -0.3950593957084414,
+            "adjusted_interval_pp": [
+              -1.272837906657312,
+              0.4694717523719162
+            ],
+            "descriptive_ci95_pp": [
+              -0.9418224454842056,
+              0.1431009832475333
+            ],
+            "transitions": {
+              "changed": 60,
+              "corrected": 24,
+              "introduced": 36,
+              "both_correct": 2354,
+              "both_wrong": 789,
+              "corrected_fp": 15,
+              "corrected_fn": 9,
+              "introduced_fp": 24,
+              "introduced_fn": 12
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 60,
+          "paired_n": 3203,
+          "changed_percent": 1.8732438339057134
+        }
+      },
+      "range_pp": 0.41187651742854436
+    },
+    "decider": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.7943089526790149,
+        "accuracy": 0.8317202622541368,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.9380819366852886,
+            "recall": 0.8323007021891781,
+            "f1-score": 0.8820310790107244,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.6151658767772512,
+            "recall": 0.829923273657289,
+            "f1-score": 0.7065868263473054,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            2015,
+            406
+          ],
+          [
+            133,
+            649
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7862938765198528,
+            "accuracy": 0.8245394942241648,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.9349555451567618,
+                "recall": 0.8252788104089219,
+                "f1-score": 0.8767003071522598,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.6031894934333959,
+                "recall": 0.8222506393861893,
+                "f1-score": 0.6958874458874459,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1998,
+                423
+              ],
+              [
+                139,
+                643
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.7943089526790149,
+            "comparison_macro_f1": 0.7862938765198528,
+            "difference_pp": -0.8015076159162082,
+            "adjusted_interval_pp": [
+              -1.8729240874977175,
+              0.2120682058038847
+            ],
+            "descriptive_ci95_pp": [
+              -1.5155842034420604,
+              -0.10743153432290345
+            ],
+            "transitions": {
+              "changed": 97,
+              "corrected": 37,
+              "introduced": 60,
+              "both_correct": 2604,
+              "both_wrong": 502,
+              "corrected_fp": 24,
+              "corrected_fn": 13,
+              "introduced_fp": 41,
+              "introduced_fn": 19
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 97,
+          "paired_n": 3203,
+          "changed_percent": 3.0284108648142367
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7835371020741133,
+            "accuracy": 0.8198563846394006,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.940305635148042,
+                "recall": 0.8133002891367204,
+                "f1-score": 0.872203765227021,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5924256086564472,
+                "recall": 0.840153452685422,
+                "f1-score": 0.6948704389212057,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1969,
+                452
+              ],
+              [
+                125,
+                657
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.7943089526790149,
+            "comparison_macro_f1": 0.7835371020741133,
+            "difference_pp": -1.07718506049016,
+            "adjusted_interval_pp": [
+              -2.0120174296011935,
+              -0.14746506236074736
+            ],
+            "descriptive_ci95_pp": [
+              -1.6727624785333177,
+              -0.4719514054817281
+            ],
+            "transitions": {
+              "changed": 76,
+              "corrected": 19,
+              "introduced": 57,
+              "both_correct": 2607,
+              "both_wrong": 520,
+              "corrected_fp": 4,
+              "corrected_fn": 15,
+              "introduced_fp": 50,
+              "introduced_fn": 7
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 76,
+          "paired_n": 3203,
+          "changed_percent": 2.372775522947237
+        }
+      },
+      "range_pp": 1.07718506049016
+    },
+    "qwen2b": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.44232806711404155,
+        "accuracy": 0.4430221667187012,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.976083707025411,
+            "recall": 0.2697232548533664,
+            "f1-score": 0.42265372168284787,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.3022888713496448,
+            "recall": 0.979539641943734,
+            "f1-score": 0.4620024125452352,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            653,
+            1768
+          ],
+          [
+            16,
+            766
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.42975307232960797,
+            "accuracy": 0.43115828910396503,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.9807383627608347,
+                "recall": 0.2523750516315572,
+                "f1-score": 0.4014454664914586,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.29844961240310075,
+                "recall": 0.9846547314578005,
+                "f1-score": 0.4580606781677573,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                611,
+                1810
+              ],
+              [
+                12,
+                770
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.44232806711404155,
+            "comparison_macro_f1": 0.42975307232960797,
+            "difference_pp": -1.257499478443358,
+            "adjusted_interval_pp": [
+              -2.3549531634430902,
+              -0.20321504761154724
+            ],
+            "descriptive_ci95_pp": [
+              -1.9777448747063706,
+              -0.5478242274675386
+            ],
+            "transitions": {
+              "changed": 122,
+              "corrected": 42,
+              "introduced": 80,
+              "both_correct": 1339,
+              "both_wrong": 1742,
+              "corrected_fp": 36,
+              "corrected_fn": 6,
+              "introduced_fp": 78,
+              "introduced_fn": 2
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 122,
+          "paired_n": 3203,
+          "changed_percent": 3.8089291289416174
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.42618274876992013,
+            "accuracy": 0.42772400874180455,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.9772727272727273,
+                "recall": 0.2486575795125981,
+                "f1-score": 0.3964438590714521,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.2968689601855431,
+                "recall": 0.9820971867007673,
+                "f1-score": 0.45592163846838824,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                602,
+                1819
+              ],
+              [
+                14,
+                768
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.44232806711404155,
+            "comparison_macro_f1": 0.42618274876992013,
+            "difference_pp": -1.6145318344121418,
+            "adjusted_interval_pp": [
+              -2.5611457635857593,
+              -0.6987015623155369
+            ],
+            "descriptive_ci95_pp": [
+              -2.2185359138220866,
+              -1.009866364219338
+            ],
+            "transitions": {
+              "changed": 89,
+              "corrected": 20,
+              "introduced": 69,
+              "both_correct": 1350,
+              "both_wrong": 1764,
+              "corrected_fp": 17,
+              "corrected_fn": 3,
+              "introduced_fp": 68,
+              "introduced_fn": 1
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 89,
+          "paired_n": 3203,
+          "changed_percent": 2.778645020293475
+        }
+      },
+      "range_pp": 1.6145318344121418
+    },
+    "qwen4b": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.724828178694158,
+        "accuracy": 0.7814548860443334,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8850111856823266,
+            "recall": 0.8170177612556795,
+            "f1-score": 0.8496563573883161,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.5423553719008265,
+            "recall": 0.6713554987212276,
+            "f1-score": 0.6,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1978,
+            443
+          ],
+          [
+            257,
+            525
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7123630281059042,
+            "accuracy": 0.7742741180143615,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8743386243386243,
+                "recall": 0.8190830235439901,
+                "f1-score": 0.8458093410108766,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5315508021390374,
+                "recall": 0.6355498721227621,
+                "f1-score": 0.5789167152009319,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1983,
+                438
+              ],
+              [
+                285,
+                497
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.724828178694158,
+            "comparison_macro_f1": 0.7123630281059042,
+            "difference_pp": -1.2465150588253815,
+            "adjusted_interval_pp": [
+              -2.6096973365742477,
+              0.07574490179401171
+            ],
+            "descriptive_ci95_pp": [
+              -2.1686575220265127,
+              -0.3491869664980961
+            ],
+            "transitions": {
+              "changed": 153,
+              "corrected": 65,
+              "introduced": 88,
+              "both_correct": 2415,
+              "both_wrong": 635,
+              "corrected_fp": 54,
+              "corrected_fn": 11,
+              "introduced_fp": 49,
+              "introduced_fn": 39
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 153,
+          "paired_n": 3203,
+          "changed_percent": 4.776771776459569
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7280814863343164,
+            "accuracy": 0.7848891664064939,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8855743544078362,
+                "recall": 0.8215613382899628,
+                "f1-score": 0.8523676880222841,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.54858934169279,
+                "recall": 0.6713554987212276,
+                "f1-score": 0.6037952846463485,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1989,
+                432
+              ],
+              [
+                257,
+                525
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.724828178694158,
+            "comparison_macro_f1": 0.7280814863343164,
+            "difference_pp": 0.32533076401582983,
+            "adjusted_interval_pp": [
+              -0.94303228789171,
+              1.6164027286970524
+            ],
+            "descriptive_ci95_pp": [
+              -0.4944939549488516,
+              1.1378286365294965
+            ],
+            "transitions": {
+              "changed": 119,
+              "corrected": 65,
+              "introduced": 54,
+              "both_correct": 2449,
+              "both_wrong": 635,
+              "corrected_fp": 42,
+              "corrected_fn": 23,
+              "introduced_fp": 31,
+              "introduced_fn": 23
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 119,
+          "paired_n": 3203,
+          "changed_percent": 3.7152669372463314
+        }
+      },
+      "range_pp": 1.5718458228412113
+    },
+    "nimble": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6161222646808391,
+        "accuracy": 0.6475179519200749,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8804475853945819,
+            "recall": 0.617513424204874,
+            "f1-score": 0.7259043457149794,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.3847176079734219,
+            "recall": 0.7404092071611253,
+            "f1-score": 0.5063401836466987,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1495,
+            926
+          ],
+          [
+            203,
+            579
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.5961779451272397,
+            "accuracy": 0.627848891664065,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8659916617033949,
+                "recall": 0.600578273440727,
+                "f1-score": 0.7092682926829268,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.36548556430446194,
+                "recall": 0.7122762148337596,
+                "f1-score": 0.48308759757155245,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1454,
+                967
+              ],
+              [
+                225,
+                557
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6161222646808391,
+            "comparison_macro_f1": 0.5961779451272397,
+            "difference_pp": -1.9944319553599432,
+            "adjusted_interval_pp": [
+              -3.416665530561297,
+              -0.5608188697077247
+            ],
+            "descriptive_ci95_pp": [
+              -2.939215071182002,
+              -1.0410553856946998
+            ],
+            "transitions": {
+              "changed": 253,
+              "corrected": 95,
+              "introduced": 158,
+              "both_correct": 1916,
+              "both_wrong": 1034,
+              "corrected_fp": 75,
+              "corrected_fn": 20,
+              "introduced_fp": 116,
+              "introduced_fn": 42
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 253,
+          "paired_n": 3203,
+          "changed_percent": 7.8988448329690915
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.603684365212616,
+            "accuracy": 0.6281610989697158,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8897338403041825,
+                "recall": 0.5799256505576208,
+                "f1-score": 0.7021755438859715,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.37415384615384617,
+                "recall": 0.7774936061381074,
+                "f1-score": 0.5051931865392605,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1404,
+                1017
+              ],
+              [
+                174,
+                608
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6161222646808391,
+            "comparison_macro_f1": 0.603684365212616,
+            "difference_pp": -1.2437899468223046,
+            "adjusted_interval_pp": [
+              -2.4647452489784243,
+              0.012642473769338393
+            ],
+            "descriptive_ci95_pp": [
+              -2.059909898024127,
+              -0.420745029409362
+            ],
+            "transitions": {
+              "changed": 194,
+              "corrected": 66,
+              "introduced": 128,
+              "both_correct": 1946,
+              "both_wrong": 1063,
+              "corrected_fp": 31,
+              "corrected_fn": 35,
+              "introduced_fp": 122,
+              "introduced_fn": 6
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 194,
+          "paired_n": 3203,
+          "changed_percent": 6.056821729628473
+        }
+      },
+      "range_pp": 1.9944319553599432
+    },
+    "cope": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6530022416356218,
+        "accuracy": 0.7043396815485482,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8659384309831182,
+            "recall": 0.7203634861627427,
+            "f1-score": 0.7864712514092447,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.4306139613120269,
+            "recall": 0.6547314578005116,
+            "f1-score": 0.519533231861999,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1744,
+            677
+          ],
+          [
+            270,
+            512
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6517483618206401,
+            "accuracy": 0.7015298157976897,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8675363773206222,
+                "recall": 0.7141676992978109,
+                "f1-score": 0.7834164023561395,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.428099173553719,
+                "recall": 0.6624040920716112,
+                "f1-score": 0.5200803212851406,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1729,
+                692
+              ],
+              [
+                264,
+                518
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6530022416356218,
+            "comparison_macro_f1": 0.6517483618206401,
+            "difference_pp": -0.12538798149817065,
+            "adjusted_interval_pp": [
+              -0.915671578182819,
+              0.6325235861209508
+            ],
+            "descriptive_ci95_pp": [
+              -0.632850417771581,
+              0.3831815742517835
+            ],
+            "transitions": {
+              "changed": 71,
+              "corrected": 31,
+              "introduced": 40,
+              "both_correct": 2216,
+              "both_wrong": 916,
+              "corrected_fp": 22,
+              "corrected_fn": 9,
+              "introduced_fp": 37,
+              "introduced_fn": 3
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 71,
+          "paired_n": 3203,
+          "changed_percent": 2.2166718701217607
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.649062813852499,
+            "accuracy": 0.7037152669372463,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8597262952101662,
+                "recall": 0.7265592730276745,
+                "f1-score": 0.7875531676740541,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.4278305963699222,
+                "recall": 0.6329923273657289,
+                "f1-score": 0.5105724600309438,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1759,
+                662
+              ],
+              [
+                287,
+                495
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6530022416356218,
+            "comparison_macro_f1": 0.649062813852499,
+            "difference_pp": -0.39394277831228397,
+            "adjusted_interval_pp": [
+              -1.2562300181157806,
+              0.4054736963020235
+            ],
+            "descriptive_ci95_pp": [
+              -0.9548963131173002,
+              0.1417818694089829
+            ],
+            "transitions": {
+              "changed": 74,
+              "corrected": 36,
+              "introduced": 38,
+              "both_correct": 2218,
+              "both_wrong": 911,
+              "corrected_fp": 36,
+              "corrected_fn": 0,
+              "introduced_fp": 21,
+              "introduced_fn": 17
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 74,
+          "paired_n": 3203,
+          "changed_percent": 2.3103340618170467
+        }
+      },
+      "range_pp": 0.39394277831228397
+    },
+    "jev": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6889192972691465,
+        "accuracy": 0.751795192007493,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8658865886588659,
+            "recall": 0.7947129285419249,
+            "f1-score": 0.8287744992461771,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.49337410805300713,
+            "recall": 0.618925831202046,
+            "f1-score": 0.5490640952921158,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1924,
+            497
+          ],
+          [
+            298,
+            484
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6930297570046398,
+            "accuracy": 0.758039338120512,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8648049645390071,
+                "recall": 0.8058653448988021,
+                "f1-score": 0.8342954885610434,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5036958817317846,
+                "recall": 0.6099744245524297,
+                "f1-score": 0.551764025448236,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1951,
+                470
+              ],
+              [
+                305,
+                477
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6889192972691465,
+            "comparison_macro_f1": 0.6930297570046398,
+            "difference_pp": 0.4110459735493288,
+            "adjusted_interval_pp": [
+              -0.7465726209008294,
+              1.5941361239925025
+            ],
+            "descriptive_ci95_pp": [
+              -0.3357575965709386,
+              1.1728287432003093
+            ],
+            "transitions": {
+              "changed": 106,
+              "corrected": 63,
+              "introduced": 43,
+              "both_correct": 2365,
+              "both_wrong": 732,
+              "corrected_fp": 49,
+              "corrected_fn": 14,
+              "introduced_fp": 22,
+              "introduced_fn": 21
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 106,
+          "paired_n": 3203,
+          "changed_percent": 3.309397439900094
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6951020550676539,
+            "accuracy": 0.7574149235092101,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8686098654708521,
+                "recall": 0.8000826104915324,
+                "f1-score": 0.8329391528703505,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5025693730729702,
+                "recall": 0.6253196930946292,
+                "f1-score": 0.5572649572649573,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1937,
+                484
+              ],
+              [
+                293,
+                489
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6889192972691465,
+            "comparison_macro_f1": 0.6951020550676539,
+            "difference_pp": 0.618275779850741,
+            "adjusted_interval_pp": [
+              -0.4563363251654336,
+              1.63016414008235
+            ],
+            "descriptive_ci95_pp": [
+              -0.02809223423046375,
+              1.2748813705909328
+            ],
+            "transitions": {
+              "changed": 80,
+              "corrected": 49,
+              "introduced": 31,
+              "both_correct": 2377,
+              "both_wrong": 746,
+              "corrected_fp": 33,
+              "corrected_fn": 16,
+              "introduced_fp": 20,
+              "introduced_fn": 11
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 80,
+          "paired_n": 3203,
+          "changed_percent": 2.497658445207618
+        }
+      },
+      "range_pp": 0.618275779850741
+    },
+    "luna": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6952459485951529,
+        "accuracy": 0.7602247892600686,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.865546218487395,
+            "recall": 0.8083436596447748,
+            "f1-score": 0.8359675352413498,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.5074309978768577,
+            "recall": 0.6112531969309463,
+            "f1-score": 0.5545243619489559,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            1957,
+            464
+          ],
+          [
+            304,
+            478
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7018208318874637,
+            "accuracy": 0.7708398376522011,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8631080499354283,
+                "recall": 0.8281701776125568,
+                "f1-score": 0.8452782462057336,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5272727272727272,
+                "recall": 0.5933503836317136,
+                "f1-score": 0.5583634175691937,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                2005,
+                416
+              ],
+              [
+                318,
+                464
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6952459485951529,
+            "comparison_macro_f1": 0.7018208318874637,
+            "difference_pp": 0.6574883292310818,
+            "adjusted_interval_pp": [
+              -0.8324582716988858,
+              2.1240476261931756
+            ],
+            "descriptive_ci95_pp": [
+              -0.29485593111655495,
+              1.6069029168601783
+            ],
+            "transitions": {
+              "changed": 180,
+              "corrected": 107,
+              "introduced": 73,
+              "both_correct": 2362,
+              "both_wrong": 661,
+              "corrected_fp": 90,
+              "corrected_fn": 17,
+              "introduced_fp": 42,
+              "introduced_fn": 31
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 180,
+          "paired_n": 3203,
+          "changed_percent": 5.6197315017171405
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.7031115012895648,
+            "accuracy": 0.7661567280674367,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8702391496899912,
+                "recall": 0.8116480793060719,
+                "f1-score": 0.8399230604830092,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5174603174603175,
+                "recall": 0.6253196930946292,
+                "f1-score": 0.5662999420961204,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                1965,
+                456
+              ],
+              [
+                293,
+                489
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6952459485951529,
+            "comparison_macro_f1": 0.7031115012895648,
+            "difference_pp": 0.7865552694411915,
+            "adjusted_interval_pp": [
+              -0.6375128600926387,
+              2.193797139236754
+            ],
+            "descriptive_ci95_pp": [
+              -0.11919320555974777,
+              1.6866391281232604
+            ],
+            "transitions": {
+              "changed": 167,
+              "corrected": 93,
+              "introduced": 74,
+              "both_correct": 2361,
+              "both_wrong": 675,
+              "corrected_fp": 66,
+              "corrected_fn": 27,
+              "introduced_fp": 58,
+              "introduced_fn": 16
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 167,
+          "paired_n": 3203,
+          "changed_percent": 5.2138620043709025
+        }
+      },
+      "range_pp": 0.7865552694411915
+    },
+    "sol": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.6976986546176265,
+        "accuracy": 0.7842647517951921,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8465544871794872,
+            "recall": 0.8727798430400661,
+            "f1-score": 0.8594671547691682,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.5643564356435643,
+            "recall": 0.510230179028133,
+            "f1-score": 0.5359301544660846,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            2113,
+            308
+          ],
+          [
+            383,
+            399
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.683213057950453,
+            "accuracy": 0.7827037152669373,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8346915017462165,
+                "recall": 0.8884758364312267,
+                "f1-score": 0.8607442977190877,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5686900958466453,
+                "recall": 0.45524296675191817,
+                "f1-score": 0.5056818181818182,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                2151,
+                270
+              ],
+              [
+                426,
+                356
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6976986546176265,
+            "comparison_macro_f1": 0.683213057950453,
+            "difference_pp": -1.4485596667173528,
+            "adjusted_interval_pp": [
+              -3.0087129610952843,
+              0.11846233764355296
+            ],
+            "descriptive_ci95_pp": [
+              -2.474664198167784,
+              -0.4569799258296851
+            ],
+            "transitions": {
+              "changed": 133,
+              "corrected": 64,
+              "introduced": 69,
+              "both_correct": 2443,
+              "both_wrong": 627,
+              "corrected_fp": 57,
+              "corrected_fn": 7,
+              "introduced_fp": 19,
+              "introduced_fn": 50
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 133,
+          "paired_n": 3203,
+          "changed_percent": 4.152357165157665
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.696913528707801,
+            "accuracy": 0.7876990321573525,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8433925049309665,
+                "recall": 0.8831061544816192,
+                "f1-score": 0.8627925746569814,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5763473053892215,
+                "recall": 0.49232736572890023,
+                "f1-score": 0.5310344827586206,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                2138,
+                283
+              ],
+              [
+                397,
+                385
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.6976986546176265,
+            "comparison_macro_f1": 0.696913528707801,
+            "difference_pp": -0.07851259098254904,
+            "adjusted_interval_pp": [
+              -1.6424459816556098,
+              1.4579028413528257
+            ],
+            "descriptive_ci95_pp": [
+              -1.1262343326077122,
+              0.9516188636465929
+            ],
+            "transitions": {
+              "changed": 133,
+              "corrected": 72,
+              "introduced": 61,
+              "both_correct": 2451,
+              "both_wrong": 619,
+              "corrected_fp": 49,
+              "corrected_fn": 23,
+              "introduced_fp": 24,
+              "introduced_fn": 37
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 133,
+          "paired_n": 3203,
+          "changed_percent": 4.152357165157665
+        }
+      },
+      "range_pp": 1.4485596667173528
+    },
+    "decisions": {
+      "original": {
+        "requested": 3203,
+        "n": 3203,
+        "coverage": 1.0,
+        "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+        "macro_f1": 0.658398645201345,
+        "accuracy": 0.7833281298782392,
+        "per_class": {
+          "non-hate": {
+            "precision": 0.8175799926443545,
+            "recall": 0.9182156133828996,
+            "f1-score": 0.8649805447470817,
+            "support": 2421.0
+          },
+          "hate": {
+            "precision": 0.5909090909090909,
+            "recall": 0.3657289002557545,
+            "f1-score": 0.4518167456556082,
+            "support": 782.0
+          }
+        },
+        "class_order": [
+          "non-hate",
+          "hate"
+        ],
+        "confusion_matrix": [
+          [
+            2223,
+            198
+          ],
+          [
+            496,
+            286
+          ]
+        ]
+      },
+      "variants": {
+        "P1": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6484219375809986,
+            "accuracy": 0.7802060568217296,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8129784907036092,
+                "recall": 0.9211069805865345,
+                "f1-score": 0.8636715724244771,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5847826086956521,
+                "recall": 0.34398976982097185,
+                "f1-score": 0.4331723027375201,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                2230,
+                191
+              ],
+              [
+                513,
+                269
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.658398645201345,
+            "comparison_macro_f1": 0.6484219375809986,
+            "difference_pp": -0.9976707620346303,
+            "adjusted_interval_pp": [
+              -2.728680754653287,
+              0.6408834984379959
+            ],
+            "descriptive_ci95_pp": [
+              -2.1255210069643793,
+              0.08709159240190316
+            ],
+            "transitions": {
+              "changed": 122,
+              "corrected": 56,
+              "introduced": 66,
+              "both_correct": 2443,
+              "both_wrong": 638,
+              "corrected_fp": 38,
+              "corrected_fn": 18,
+              "introduced_fp": 31,
+              "introduced_fn": 35
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 122,
+          "paired_n": 3203,
+          "changed_percent": 3.8089291289416174
+        },
+        "P2": {
+          "metrics": {
+            "requested": 3203,
+            "n": 3203,
+            "coverage": 1.0,
+            "scope": "Conditional on valid answers; refusals are excluded, never relabeled.",
+            "macro_f1": 0.6552355645642349,
+            "accuracy": 0.7798938495160787,
+            "per_class": {
+              "non-hate": {
+                "precision": 0.8168389955686853,
+                "recall": 0.9136720363486163,
+                "f1-score": 0.862546305322675,
+                "support": 2421.0
+              },
+              "hate": {
+                "precision": 0.5777777777777777,
+                "recall": 0.3657289002557545,
+                "f1-score": 0.44792482380579485,
+                "support": 782.0
+              }
+            },
+            "class_order": [
+              "non-hate",
+              "hate"
+            ],
+            "confusion_matrix": [
+              [
+                2212,
+                209
+              ],
+              [
+                496,
+                286
+              ]
+            ]
+          },
+          "contrast": {
+            "requested": 3203,
+            "n": 3203,
+            "clusters": 3200,
+            "family_size": 20,
+            "reference_macro_f1": 0.658398645201345,
+            "comparison_macro_f1": 0.6552355645642349,
+            "difference_pp": -0.3163080637110016,
+            "adjusted_interval_pp": [
+              -2.244653230256172,
+              1.5837247781846637
+            ],
+            "descriptive_ci95_pp": [
+              -1.5499906188583352,
+              0.9066243736918482
+            ],
+            "transitions": {
+              "changed": 141,
+              "corrected": 65,
+              "introduced": 76,
+              "both_correct": 2433,
+              "both_wrong": 629,
+              "corrected_fp": 31,
+              "corrected_fn": 34,
+              "introduced_fp": 42,
+              "introduced_fn": 34
+            },
+            "scope": "Paired valid intersection; fixed-label macro-F1; cluster bootstrap, seed20260929."
+          },
+          "changed_n": 141,
+          "paired_n": 3203,
+          "changed_percent": 4.4021230096784265
+        }
+      },
+      "range_pp": 0.9976707620346303
+    }
+  },
+  "spearman_rho": {
+    "original/P1": 0.9030303030303028,
+    "original/P2": 0.9757575757575757,
+    "P1/P2": 0.9515151515151514
+  },
+  "hosted_accounting": {
+    "jev": {
+      "requests": 6407,
+      "recorded_usd": 0.121732,
+      "recorded_or_reserved_usd": 0.124485,
+      "unknown_charges": 1,
+      "refusals": 0,
+      "retries": 1
+    },
+    "luna": {
+      "requests": 6408,
+      "recorded_usd": 0.3507162,
+      "recorded_or_reserved_usd": 0.3518252,
+      "unknown_charges": 2,
+      "refusals": 0,
+      "retries": 2
+    },
+    "sol": {
+      "requests": 6406,
+      "recorded_usd": 3.345714,
+      "recorded_or_reserved_usd": 3.345714,
+      "unknown_charges": 0,
+      "refusals": 0,
+      "retries": 0
+    },
+    "decisions": {
+      "requests": 6406,
+      "recorded_usd": 0.1640955,
+      "recorded_or_reserved_usd": 0.1640955,
+      "unknown_charges": 0,
+      "refusals": 0,
+      "retries": 0
+    }
+  }
+}

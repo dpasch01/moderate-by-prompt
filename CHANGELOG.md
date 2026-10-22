@@ -1,5 +1,18 @@
 # Change Log
 
+## Completed Sol and wording robustness
+
+- Added all four completed Sol historical no-definition contrasts and the Sol row in the Appendix E prediction-flip table, with exact counts and percentages. Earlier model rows are unchanged.
+- Added the complete definition-effects Figure 2 (PDF/PNG) and replacement caption, including Sol under its separate four-comparison family.
+- Added MHS prompt-wording robustness for ten models and two frozen paraphrases, with 20 Bonferroni-adjusted contrasts, ranking correlations and hosted accounting. BART is excluded; CoPE retains its native wrapper.
+- Exported provenance without private research-tree locations; JSON artifacts contain no Windows path separators. Frozen research results remain unchanged.
+
+## Threshold-control results
+
+- Added `results/threshold_control.md` and `.csv` for Section 4.3, Appendix H, Table 7: matched A/B conditions, A*/B* tuning protocols, frozen thresholds, all 24 cells, valid/paired N and all 96 saved adjusted contrasts.
+- Preserved separate primary and exploratory 24-contrast families for each tuning stage; documented the 199-output sensitivities and B* validation accounting ($0.11 recorded/reserved, 1,200 hosted requests).
+- Added the results to the README contents table. Existing model results, predictions, prompts and thresholds are unchanged.
+
 ## Final annotation update
 
 - Replaced the earlier annotation round following receipt of the final expert annotations and adoption of the expert–Opus–Gemini reference.

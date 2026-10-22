@@ -20,7 +20,10 @@ All paths below are relative to the repository root. Section letters refer to th
 | `results/attributes.md` | Conduct, group, and direction macro-F1 | Appendix D |
 | `results/class_description_ablation.md` | Ablation separating the definition from the class descriptions | Section 4.2 |
 | `results/definition_flips.md` | Predictions changed, corrected, and broken by the definition | Section 4.2, Appendix E |
+| `results/sol_definition_effects/` | Completed Sol no-definition contrasts and exact prediction-flip counts | Section 4.2, Appendix E, Table 5, Figure 2 |
+| `results/prompt_wording/` | MHS definition paraphrases: ten models, 20 adjusted contrasts, ranking stability and hosted cost | Additional robustness analysis |
 | `results/three_class.md` | Per-class F1 on HateXplain's three-class task | Appendix F |
+| `results/threshold_control.md`, `results/threshold_control.csv` | A* and B* protocols, frozen thresholds, 24-cell results, adjusted intervals and validation cost | Section 4.3, Appendix H, Table 7 |
 | `results/efficiency.md`, `results/efficiency.csv` | Median and 95th-percentile latency, throughput, and cost for all models | Appendix H, Figure 3 |
 | `results/cascades.md` | Cascade protocol, results, estimated and live latency, and the cascade curves | Appendix I |
 | `results/audit_protocol.md` | Protocol and results of the policy and component audit | Section 4.2, Table 3, Appendix J |
@@ -29,7 +32,7 @@ All paths below are relative to the repository root. Section letters refer to th
 | `results/decider_exposure.md` | Decider training-exposure replay results | Section 5 |
 | `results/generic_definition.md` | Effect of the generic definition (early experiments) | Not in paper |
 | `results/selective_routing.md` | Exploratory selective-routing analysis (earlier cohorts) | Not in paper |
-| `figures/` | Cascade curves and the supervised-transfer heatmap | Appendix D, I |
+| `figures/` | Definition effects including Sol, cascade curves, and the supervised-transfer heatmap | Figure 2, Appendix D, I |
 | `code/` | Evaluation and analysis code (released upon acceptance) | Section 3 |
 | `CHANGELOG.md` | Changes since the first version of this repository | |
 

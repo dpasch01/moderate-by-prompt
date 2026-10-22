@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-22T06:41:25.215076+00:00",
+  "reason": "HTTP 529 system_overloaded; no classification returned.",
+  "failed_job": "jev/MHS/C2/MHS:25095",
+  "retry_job": "jev/MHS/C2/MHS:25095/reviewed_retry_1",
+  "action": "One reviewed retry using identical payload; preserve original attempt and unknown-charge reservation. No prompts, thresholds, test labels or analysis selections change.",
+  "protocol_sha256": "d10a7db4ab8250db984dc2ecfe8211ac9972bd4050ebbbe74d3d493dfd17d6c9",
+  "script_sha256": "82cfec4debb28bfc4cc6df75edfa48317e6e19ea94f99bdc38efa19670edfddd"
+}

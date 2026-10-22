@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-22T06:25:41.574698+00:00",
+  "reason": "HTTP 200 envelope contains provider_unavailable 502; no classification returned.",
+  "failed_job": "luna/MHS/C1/MHS:10413",
+  "retry_job": "luna/MHS/C1/MHS:10413/reviewed_retry_1",
+  "action": "One reviewed retry using identical payload; preserve original attempt and unknown-charge reservation. No prompts, thresholds, test labels or analysis selections change.",
+  "protocol_sha256": "d10a7db4ab8250db984dc2ecfe8211ac9972bd4050ebbbe74d3d493dfd17d6c9",
+  "script_sha256": "506b60a65e5ac4dc62772a5e5180a43302a1315b679585333a3dd574704022e9"
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-22T06:30:44.533526+00:00",
+  "reason": "ReadTimeout after 45 seconds; no classification returned; original charge remains unknown.",
+  "failed_job": "luna/MHS/C1/MHS:49555",
+  "retry_job": "luna/MHS/C1/MHS:49555/reviewed_retry_1",
+  "action": "One reviewed retry using identical payload; preserve original attempt and unknown-charge reservation. No prompts, thresholds, test labels or analysis selections change.",
+  "protocol_sha256": "d10a7db4ab8250db984dc2ecfe8211ac9972bd4050ebbbe74d3d493dfd17d6c9",
+  "script_sha256": "b5a8894c504879a92ab9fa710568278249742e80d5430bc623ca68d7a45bbd86"
+}
