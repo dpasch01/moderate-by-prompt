@@ -15,7 +15,6 @@
 
 ## Final annotation update
 
-- Replaced the earlier annotation round following receipt of the final expert annotations and adoption of the expert–Opus–Gemini reference.
 - Audit CSV now has the requested expert, Opus, Gemini and reference policy/component columns, with identifiers only.
 - Audit protocol reports 187 resolved policy judgments, 180 all-component-resolved texts, expert–judge agreement, 29 reference–dataset conflicts, updated model agreement and component correctness, correction pairs, definition effects and paired intervals.
 - Policy-contrast validation now documents per-annotator agreement with expected labels, Fleiss kappa, 234 accepted texts and six excluded IDs. Its README includes 240-versus-234 bootstrap sensitivity tables.

@@ -21,8 +21,6 @@ The final reference combines one expert hate-speech researcher with two LLM judg
 
 For each field, at least two matching definite votes establish the reference. Uncertain, missing, blank and skipped answers do not vote; fewer than two agreeing votes is unresolved. The policy verdict is voted directly, not derived from the component majority. This resolves **187/200 policy judgments** and all components for **180/200 texts**.
 
-An earlier annotation round was replaced following receipt of the final expert annotations and adoption of the expert–Opus–Gemini reference.
-
 Judge decoding: maximum 1,024 output tokens, strict JSON schema, one outstanding request per run; temperature, top-p, reasoning and sampling seed were not explicitly set. Hosted model aliases do not identify immutable weight revisions. All model-versus-reference analyses below reuse cached predictions.
 
 ## Expert–judge agreement
